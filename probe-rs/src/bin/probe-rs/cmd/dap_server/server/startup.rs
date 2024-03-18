@@ -42,7 +42,7 @@ pub fn debug(
 
     log_to_console_and_tracing("Starting as a DAP Protocol server");
 
-    let addr = std::net::SocketAddr::new(std::net::IpAddr::V4(Ipv4Addr::LOCALHOST), port);
+    let addr = std::net::SocketAddr::new(std::net::IpAddr::V4(Ipv4Addr::UNSPECIFIED), port);
 
     // Tell the user if (and where) RUST_LOG messages are written.
     log_to_console_and_tracing(log_info_message);
